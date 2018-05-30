@@ -1,5 +1,11 @@
 .vscode/
 npm-debug.log
+
+tests
+.travis.yml
+
 *.ts
+
+# Include the following
 !*.d.ts
 !*.js
