@@ -1,0 +1,27 @@
+{
+  "name": "@elsevier/decorators",
+  "version": "0.0.0",
+  "description": "A collection of TypeScript decorators",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run transpile",
+    "postpublish": "git clean -f",
+    "transpile": "./node_modules/.bin/tsc -d -p .",
+    "build": "npm run -s transpile",
+    "pretest": "npm run -s build",
+    "test": "ava --verbose tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elsevier-io/decorators.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/elsevier-io/decorators#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "typescript": "^2.8.3"
+  }
+}
