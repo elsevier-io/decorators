@@ -4,10 +4,9 @@
   "description": "A collection of TypeScript decorators",
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm run transpile",
+    "prepublish": "npm run build",
     "postpublish": "git clean -f",
-    "transpile": "./node_modules/.bin/tsc -d -p .",
-    "build": "npm run -s transpile",
+    "build": "./node_modules/.bin/tsc -d -p .",
     "pretest": "npm run -s build",
     "test": "ava --verbose tests"
   },
