@@ -20,7 +20,7 @@
   "homepage": "https://github.com/elsevier-io/decorators#readme",
   "dependencies": {},
   "devDependencies": {
-    "ava": "^0.25.0",
-    "typescript": "^2.8.3"
+    "ava": "^1.4.1",
+    "typescript": "^4.2.4"
   }
 }
